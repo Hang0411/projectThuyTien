@@ -4,6 +4,9 @@ namespace App\Entity;
 
 use App\Repository\RecettesRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
+use Gedmo\Mapping\Annotation\Timestampable;
+
 
 /**
  * @ORM\Entity(repositoryClass=RecettesRepository::class)
@@ -23,6 +26,7 @@ class Recettes
     private $title;
 
     /**
+     * @Gedmo\Slug(fields={"title"})
      * @ORM\Column(type="string", length=255)
      */
     private $slug;
@@ -33,7 +37,10 @@ class Recettes
     private $content;
 
     /**
-     * @ORM\Column(type="datetime_immutable")
+     * @Gedmo\Timestampable(on="create")
+     * @var \DateTimeImmutable $created_at
+     
+     * @ORM\Column(name="date", type="datetime_immutable")
      */
     private $created_at;
 
@@ -47,6 +54,8 @@ class Recettes
      * @ORM\JoinColumn(nullable=false)
      */
     private $users;
+
+    
 
     public function getId(): ?int
     {
@@ -77,6 +86,8 @@ class Recettes
         return $this;
     }
 
+
+
     public function getContent(): ?string
     {
         return $this->content;
@@ -93,11 +104,11 @@ class Recettes
     {
         return $this->created_at;
     }
-
-    public function setCreatedAt(\DateTimeImmutable $created_at): self
+    
+    public function setCreatedAt(?\DateTimeImmutable $created_at): self
     {
         $this->created_at = $created_at;
-
+ 
         return $this;
     }
 
@@ -121,7 +132,6 @@ class Recettes
     public function setUsers(?Users $users): self
     {
         $this->users = $users;
-
         return $this;
     }
 }

@@ -50,7 +50,7 @@ class UsersAuthenticator extends AbstractLoginFormAuthenticator
         }
 
       
-         return new RedirectResponse($this->urlGenerator->generate('app_home')); //cette route on peut venir vers la profile d'utitlisateursi on veut
+         return new RedirectResponse($this->urlGenerator->generate('home')); //cette route on peut venir vers la profile d'utitlisateursi on veut
         //throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
     }
 

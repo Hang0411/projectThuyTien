@@ -1,0 +1,13 @@
+header{
+    width: 100% vw;
+    height: max-content;
+    background-color: #F41D1D;
+}
+.nav-haut{
+    display: flex;
+   
+}
+header .nav-haut .logo img{
+    width: 100px;
+    height: max-content;
+}

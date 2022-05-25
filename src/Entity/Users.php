@@ -54,6 +54,11 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
         $this->recettes = new ArrayCollection();
     }
 
+    public function __toString(){
+
+        return $this->email; //Le nom de categorie va afficher dans la liste de Recettes
+    }
+
     public function getId(): ?int
     {
         return $this->id;

@@ -6,9 +6,13 @@ use App\Repository\CategoriesRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-
+use Gedmo\Mapping\Annotation as Gedmo;
+use Doctrine\Common\Annotations;
+use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter;
+use Sensio\Bundle\FrameworkExtraBundle\Request\ParamConverter\ParamConverterInterface;
 
 /**
+ * 
  * @ORM\Entity(repositoryClass=CategoriesRepository::class)
  */
 class Categories
@@ -26,7 +30,7 @@ class Categories
     private $name;
 
     /**
-     
+     * @Gedmo\Slug(fields={"name"})
      * @ORM\Column(type="string", length=100)
      */
     private $slug;
@@ -50,6 +54,11 @@ class Categories
     public function __construct()
     {
         $this->categories = new ArrayCollection();
+        $this->recettes= new ArrayCollection();
+    }
+    public function __toString(){
+
+        return $this->name; //Le nom de categorie va afficher dans la liste de Recettes
     }
 
     public function getId(): ?int
@@ -59,19 +68,12 @@ class Categories
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
     public function setName(string $Name): self
     {
-        $this->Name = $Name;
-
-        return $this;
-    }
-
-    public function setSlug(string $Slug): self
-    {
-        $this->Slug = $Slug;
+        $this->name = $Name;
 
         return $this;
     }

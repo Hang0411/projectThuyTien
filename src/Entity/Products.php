@@ -39,6 +39,11 @@ class Products
         $this->categories = new ArrayCollection();
     }
 
+    public function __toString(){
+
+        return $this->name; //Le nom de categorie va afficher dans la liste de Recettes
+    }
+
     public function getId(): ?int
     {
         return $this->id;
@@ -46,12 +51,12 @@ class Products
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
     public function setName(string $Name): self
     {
-        $this->Name = $Name;
+        $this->name = $Name;
 
         return $this;
     }

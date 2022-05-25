@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur espace d'Admin!{% endblock %}
+
+{% block body %}
+
+<h5> Vou voulez ajouter un produit? </h5> 
+<button type="button" class="btn btn-light"> <a href = "{{path('products_ajout')}}"> Ajoutez nouveau produit </a> </button> 
+
+<h5> Ajoutez une nouvelle catégorie </h5> 
+
+<button type="button" class="btn btn-light"> <a href = "{{path('categories_ajout')}}"> Ajoutez nouvelle catégorie</a> </button>
+
+<h5> Ajoutez une nouvelle recette </h5> 
+
+<button type="button" class="btn btn-light"> <a href = "{{path('recettes_ajout')}}"> Ajoutez nouvelle recette</a> </button>
+
+{% endblock %}
