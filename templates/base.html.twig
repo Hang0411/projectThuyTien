@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -10,6 +12,13 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
              <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/fruitLegume.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/produitsAfricains.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/produitsVaisselles.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/produitsBio.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+             <link rel="stylesheet" href="{{ asset('css/inscrire.css') }}">
         {% endblock %}
 
         

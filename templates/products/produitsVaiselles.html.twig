@@ -1,0 +1,143 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Site Thuy Tien{% endblock %}
+
+{% block body %}
+
+ 	{% for flash_error in app.flashes('success') %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endfor %}
+
+	<div class="container">
+
+		{% include './partials/header.html.twig' %}
+
+        <section id = "produits-vaisselles">
+
+            <div class = "meilleurs-vents">
+
+                <h3 id ="titre1">Nos meilleurs ventes</h3>
+
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle.jpg')}}" alt="">
+                            
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle1.jpg')}}" alt="">
+                           
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle20.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle21.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle22.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle14.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle17.jpg')}}" alt="">
+                    </div>
+
+                    <div class = "savoir-plus">
+                        <a href="#"><button id = "btn-meilleur">Voir d'autres produits </button></a>
+                    </div>
+
+            </div>
+
+            <div class = "produits-vents">
+
+                <h6 id = "titre2"> Découvirez nos produits vaisselles </h6>
+
+                <div>
+                   <p>Vaisselle japonaise</p>
+                   <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle20.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle1.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle2.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                    <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle3.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle4.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                    <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle5.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Vaisselle japonaise</p>
+                    <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle6.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                    <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle7.jpg')}}" alt="">
+                </div>
+
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle8.jpg')}}" alt="">
+                </div>
+
+                <div>
+                   <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle9.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle10.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle11.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle12.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle13.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle14.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle15.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle16.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Vaisselle japonaise</p>
+                     <img class = "image" src="{{asset('images/produit/produit-vaisselle/vaisselles/vaisselle23.jpg')}}" alt="">
+                </div>
+
+            </div>
+                        
+        </section>
+
+
+        {% include './partials/footer.html.twig' %}
+    </div>
+
+    {% include './partials/js.html.twig' %}
+    
+
+{% endblock %}

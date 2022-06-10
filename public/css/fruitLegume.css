@@ -1,0 +1,189 @@
+section{
+    font-family: "Loral-Regular";
+    width: 1200px;
+    height: max-content;
+    margin: auto;
+}
+
+#textes{
+    width: 300px;
+    height: max-content;
+    background-color: white;
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#produits-frais{
+    width: 290px;
+    height: 320px;
+    margin-top: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+h2{
+    width: 290px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color:  #FF1616;
+    border-radius: 7px;
+    padding-top: 10px;
+    
+}
+
+h2:hover{
+    background-color: #FFBD59;
+}
+#produits-frais ul{
+    padding-left: 20px;
+}
+
+#produits-frais li{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    background-color: #FFBD59;
+    border-radius: 7px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#produits-frais li:hover{
+    background-color: #FF1616;
+}
+
+#categories{
+    width: 290px;
+    height: 320px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#categories ul{
+    padding-left: 20px;
+}
+
+#categories li{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    background-color: #7B7575;
+    color: white;
+    border-radius: 7px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+#categories li:hover{
+    background-color: #FF1616;
+    color: white;
+}
+
+#meilleur-ventes{
+    width: 290px;
+    height: max-content;
+    background-color: white;
+    margin-bottom: 20px;
+    color: #7B7575;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#meilleur-ventes img{
+    width: 230px;
+    height: 200px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#meilleur-ventes img:hover{
+    width: 350px;
+    height: 250px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#btn-meilleur{
+    width: 210px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #7B7575;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;   
+    transition-property:calc(1);
+    transition-duration: 1000ms; 
+}  
+#btn-meilleur:hover{
+    background-color: #FF1616;
+    color:white;
+}
+h3{
+    width: 290px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
+    background-color: #FF1616;
+    font-size: 20px;
+    font-weight: bold;
+    color: white; 
+}
+
+#images{
+    width: 850px;
+    height: max-content;
+    display: inline-block ;
+    background-color: white;
+    margin-left: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#images div{
+    width: 200px;
+    height: 170px;
+    margin: auto;
+    color: #7B7575;
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition-property:calc(1);
+    transition-duration: 1000ms;
+}
+
+#images div:hover{
+    background-color: whitesmoke;
+    transform: scale(1.2); 
+}
+
+#images img{
+    width: 150px;
+    height: 150px;  
+}
+
+#images div img:active{
+    width: 400px;
+    height: 400px;
+    transform: scale(1.2); 
+}

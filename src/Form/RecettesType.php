@@ -26,15 +26,18 @@ class RecettesType extends AbstractType
 
             //->add('created_at', DateType::class)
           
-            //->add('users', EntityType::class, [ //Il faut transporme en string Entity avec function __toString dans la page Categories.php
-                //'class'=> Users::class
-            //])
+            ->add('users', EntityType::class, [ //Il faut transporme en string Entity avec function __toString dans la page Categories.php
+                'class'=> Users::class
+            ])
             ->add('Envoyer', SubmitType::class);
         ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void
     {
+
+
+        
         $resolver->setDefaults([
             'data_class' => Recettes::class,
         ]);

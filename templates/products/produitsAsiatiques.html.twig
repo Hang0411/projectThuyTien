@@ -1,0 +1,181 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Site Thuy Tien{% endblock %}
+
+{% block body %}
+
+ 	{% for flash_error in app.flashes('success') %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endfor %}
+
+	<div class="container">
+
+		 {% include './partials/header.html.twig' %}
+
+         <section >
+                <div id = "textes">
+
+                    <div id = "produits-frais">
+                        <a href="#"><h2>Produits Frais</h2></a>
+                        <ul>
+                            <a href="#"><li>Fruits et Légumes</li></a>
+                            <a href="#"><li>Charcuteries</li></a>
+                            <a href="./conserver.html"><li>Conservé du rayon frais</li></a>
+                            <a href="#"><li>Pâtisseries</li></a>
+                        </ul>
+
+                    </div>
+
+                    <div id = "categories">
+                        <a href="#"><h2>Catégories produits asiatiques</h2></a>
+                        <ul>
+                            <a href="#"><li>Boissons</li></a>
+                            <a href="#"><li>Produits secs</li></a>
+                            <a href="#"><li>Sauces exotiques</li></a>
+                            <a href="#"><li> Produits surgélés</li></a>
+                        </ul>
+
+                    </div>
+
+                    <div id = "meilleur-ventes">
+                        <h3>Nos meilleurs ventes</h3>
+
+                        <div>
+                            Les légumes pour Pho</p>
+                            <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/1.jpg')}}" alt="">
+                            
+                        </div>
+                        <div>
+                            Tofu Traditionnel
+                           
+                        </div>
+                        <div>
+                            Mini Mais
+                            <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/3.jpg')}}" alt="">
+                        </div>
+                        <div>
+                            Piper lolot (la Lot)
+                            <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/4.jpg')}}" alt="">
+                        </div>
+
+                        <div class = "savoir-plus">
+                            <a href="#"><button id = "btn-meilleur">Voir d'autres produits </button></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id = "images">
+
+                    <div>
+                        Les légumes pour Pho</p>
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/1.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Tamarind (Me chua)
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/2.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Mangue
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/3.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Tofu Traditionnel
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/4.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Piment
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/5.png')}}" alt="">
+                    </div>
+                    <div>
+                        Aubergine
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/6.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Galanga
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/7.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Gian dai Thaîland
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/8.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Mini Mais
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/9.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Chou Shanghai
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/10.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Piper lolot (la Lot)
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/11.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Citronnelle
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/12.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Feuille La He
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/13.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Liseron d'eau Thai
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/14.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Panicaut Fétide
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/12.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Ciboulette
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/17.jpg')}}" alt="">
+                    </div>
+                    <div>
+                       Basilic
+                         <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/15.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        Papaye vert
+                       <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/16.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Shimeji blanc
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/17.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Curcuma
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/18.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Tofu japonais
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/19.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Tofu Super
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/20.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Pâte de soja frit 
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/21.jpg')}}" alt="">
+                     </div>
+                     <div>
+                        Chou chinois
+                        <img class = "image" src="{{asset('images/produit/produit-asi/produits-frais/fruits-legumes/22.jpg')}}" alt="">
+                     </div>   
+
+                </div>
+            </section>
+
+
+         {% include './partials/footer.html.twig' %}
+    </div>
+
+    {% include './partials/js.html.twig' %}
+    
+
+{% endblock %}
+

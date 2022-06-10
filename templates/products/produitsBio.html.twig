@@ -1,0 +1,170 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Site Thuy Tien{% endblock %}
+
+{% block body %}
+
+ 	{% for flash_error in app.flashes('success') %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endfor %}
+
+	<div class="container">
+
+		{% include './partials/header.html.twig' %}
+
+        <section id = "produits-Bio">
+
+            <div class = "meilleurs-vents-bio">
+
+                <h3 id ="titreBio1">Nos meilleurs ventes</h3>
+
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produits-bio/bio/1.jpg')}}" alt="">
+                            
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produits-bio/bio/2.jpg')}}" alt="">
+                           
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produits-bio/bio/3.jpg')}}" alt="">
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produits-bio/bio/4.jpg')}}" alt="">
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produits-bio/bio/5.jpg')}}" alt="">
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produits-bio/bio/6.jpg')}}" alt="">
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produits-bio/bio/7.jpg')}}" alt="">
+                    </div>
+
+                    <div class = "savoir-plus">
+                        <a href="#"><button id = "btn-meilleur-bio">Voir d'autres produits </button></a>
+                    </div>
+
+            </div>
+
+            <div class = "produits-vents-bio">
+
+                <h6 id = "titreBio2"> Découvirez nos produits Bio </h6>
+
+                <div>
+                   <p>Produits bio</p>
+                   <img class = "image" src="{{asset('images/produit/produits-bio/bio/1.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/2.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/3.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                   <img class = "image" src="{{asset('images/produit/produits-bio/bio/4.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                     <img class = "image" src="{{asset('images/produit/produits-bio/bio/5.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                   <img class = "image" src="{{asset('images/produit/produits-bio/bio/6.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                   <img class = "image" src="{{asset('images/produit/produits-bio/bio/7.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                   <img class = "image" src="{{asset('images/produit/produits-bio/bio/8.jpg')}}" alt="">
+                </div>
+
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/9.jpg')}}" alt="">
+                </div>
+
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/10.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/11.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/12.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                     <img class = "image" src="{{asset('images/produit/produits-bio/bio/13.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/14.jpg')}}" alt="">
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/15.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/16.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/17.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/18.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/19.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/20.jpg')}}" alt="">
+                </div>
+
+                <div>
+                    <p>Produits bio</p>
+                     <img class = "image" src="{{asset('images/produit/produits-bio/bio/13.jpg')}}" alt="">
+                </div>
+
+                 <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/9.jpg')}}" alt="">
+                </div>
+
+                <div>
+                   <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/10.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Produits bio</p>
+                    <img class = "image" src="{{asset('images/produit/produits-bio/bio/11.jpg')}}" alt="">
+                </div>
+
+            </div>
+                        
+        </section>
+
+
+        {% include './partials/footer.html.twig' %}
+    </div>
+
+    {% include './partials/js.html.twig' %}
+    
+
+{% endblock %}

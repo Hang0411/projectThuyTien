@@ -14,15 +14,44 @@ class ProductsController extends AbstractController
 
 
     /**
-     * @Route("/products", name="app_products")
+     * @Route("/productsAsi", name="app_products_asiatiques")
      */
-    public function index(): Response
+    public function produitsAsi(): Response
     {
-        return $this->render('products/index.html.twig', [
-            'controller_name' => 'ProductsController',
+        return $this->render('products/produitsAsiatiques.html.twig', [
+            'produitsAsi' => 'ProductsController',
         ]);
     }
 
+    /**
+     * @Route("/productsAfri", name="app_products_africains")
+     */
+    public function produitsAfri(): Response
+    {
+        return $this->render('products/produitsAfricains.html.twig', [
+            'produitsAfri' => 'ProductsController',
+        ]);
+    }
+
+    /**
+     * @Route("/productsVaiselles", name="app_products_vaiselles")
+     */
+    public function produitsVaiselles(): Response
+    {
+        return $this->render('products/produitsVaiselles.html.twig', [
+            'produitsVaiselles' => 'ProductsController',
+        ]);
+    }
+
+    /**
+     * @Route("/productsBio", name="app_products_bio")
+     */
+    public function produitsBio(): Response
+    {
+        return $this->render('products/produitsBio.html.twig', [
+            'produitsBio' => 'ProductsController',
+        ]);
+    }
 
 
     /**

@@ -1,0 +1,17 @@
+#inscrire{
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 300px;
+    
+}
+
+#inscrire-content{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 100px;
+    text-align: center;
+}

@@ -25,6 +25,7 @@ class Recettes
      */
     private $title;
 
+    
     /**
      * @Gedmo\Slug(fields={"title"})
      * @ORM\Column(type="string", length=255)

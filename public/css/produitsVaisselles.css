@@ -1,0 +1,111 @@
+#produits-vaisselles{
+    width: 1200px;
+    height: max-content;
+    display: flex;
+}
+
+.meilleurs-vents{
+    width: 200px;
+    height: max-content;
+    background-color: white;
+    margin-bottom: 20px;
+    color: #7B7575;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 150px;
+    display: inline-block;
+}
+
+#titre1{
+    width: 230px;
+    height: 50px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #358D82;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.meilleurs-vents div{
+    width: 200px;
+    height: max-content;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.meilleurs-vents img{
+    width: 180px;
+    height: max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.meilleurs-vents img:hover{
+    width: 200px;
+    height: 180px;
+    margin-left: 20px;
+}
+#btn-meilleur{
+    width: 210px;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #7B7575;
+    background-color: white;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;   
+    transition-property:calc(1);
+    transition-duration: 1000ms; 
+}  
+#btn-meilleur:hover{
+    background-color: #FF1616;
+    color:white;
+}
+
+.produits-vents{
+    width: 850px;
+    height: max-content;
+    margin-left: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#titre2{
+    margin-top: 30px;
+    margin-left: 170px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #358D82;
+    border: none;
+}
+
+.produits-vents div{
+    width: 250px;
+    height: 220px;
+    margin: auto;
+    color: #7B7575;
+    background-color:white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition-property:calc(1);
+    transition-duration: 1000ms;
+}
+
+.produits-vents img{
+    width: 200px;
+    height: 150px;
+    margin: auto;
+}
+.produits-vents div:hover{
+    background-color: whitesmoke;
+    transform: scale(1.1); 
+}
+

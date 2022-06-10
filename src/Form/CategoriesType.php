@@ -22,6 +22,7 @@ class CategoriesType extends AbstractType
             ->add('products', EntityType::class,[
                 'class'=>Products::class
             ])
+
             ->add('Valider', SubmitType::class);
         ;
     }

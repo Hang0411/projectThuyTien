@@ -1,0 +1,147 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Site Thuy Tien{% endblock %}
+
+{% block body %}
+
+ 	{% for flash_error in app.flashes('success') %}
+        <div class="alert alert-danger" role="alert">{{ message }}</div>
+    {% endfor %}
+
+	<div class="container">
+
+		{% include './partials/header.html.twig' %}
+
+        <section id = "produits-africans">
+
+            <div class = "meilleurs-vents">
+
+                <h6 class ="titreAfri1">Nos meilleurs ventes</h6>
+
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-afri/show/1.jpg')}}" alt="">
+                            
+                    </div>
+                    <div>
+                          <img class = "image" src="{{asset('images/produit/produit-afri/show/2.jpg')}}" alt="">
+                           
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produit-afri/show/3.jpg')}}" alt="">
+                    </div>
+                    <div>
+                         <img class = "image" src="{{asset('images/produit/produit-afri/show/4.jpg')}}" alt="">
+                    </div>
+                    <div>
+                        <img class = "image" src="{{asset('images/produit/produit-afri/show/5.jpg')}}" alt="">
+                    </div>
+                    <div>
+
+                         <img class = "image" src="{{asset('images/produit/produit-afri/show/6.jpg')}}" alt="">
+                    </div>
+                    <div>
+
+                         <img class = "image" src="{{asset('images/produit/produit-afri/show/8.jpg')}}" alt="">
+                    </div>
+
+                    <div class = "savoir-plus">
+                        <a href="#"><button id = "btn-meilleur-afri">Voir d'autres produits </button></a>
+                    </div>
+
+            </div>
+
+            <div class = "produits-vents">
+
+                <h6 class = "titreAfri2"> Découvirez nos produits africains </h6>
+
+                <div>
+                    <p>Les légumes pour Pho</p>
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/1.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                    <p>Les légumes pour Pho</p>
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/2.jpg')}}" alt="">
+                </div>
+                <div>
+                     Mini Mais
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/3.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/4.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/5.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/6.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/8.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/9.jpg')}}" alt="">
+                </div>
+
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/10.jpg')}}" alt="">
+                </div>
+
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/8.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/11.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/12.jpeg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/13.jpeg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/14.jpg')}}" alt="">
+                </div>
+                <div>
+                    Piper lolot (la Lot)
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/15.jpg')}}" alt="">
+                </div>
+                <div>
+                    <p>Les légumes pour Pho</p>
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/1.jpg')}}" alt="">
+                            
+                </div>
+                <div>
+                    <p>Les légumes pour Pho</p>
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/2.jpg')}}" alt="">
+                </div>
+
+                <div>
+                    <p>La Carambole</p>
+                    <img class = "image" src="{{asset('images/produit/produit-afri/show/8.jpg')}}" alt="">
+                </div>
+    
+
+            </div>
+                        
+        </section>
+
+
+        {% include './partials/footer.html.twig' %}
+    </div>
+
+    {% include './partials/js.html.twig' %}
+    
+
+{% endblock %}

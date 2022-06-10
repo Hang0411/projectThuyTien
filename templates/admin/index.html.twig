@@ -4,15 +4,20 @@
 
 {% block body %}
 
-<h5> Vou voulez ajouter un produit? </h5> 
-<button type="button" class="btn btn-light"> <a href = "{{path('products_ajout')}}"> Ajoutez nouveau produit </a> </button> 
+    <div id ="admin">
+        <section id ="content">
+            <div class = "admin-control">
+                <h6 class = "admin-titre"> Connectez-vous </h6> 
+                <button type="button" class="btn btn-info"> <a href = "{{path('app_login')}}">Connectez-vous </a> </button> 
+            </div>
 
-<h5> Ajoutez une nouvelle catégorie </h5> 
+            <div class = "admin-control">
+                <h6 class = "admin-titre"> Revenez sur le site web </h6> 
+                <button type="button" class="btn btn-danger"> <a href = "{{path('home_front')}}"> Click pour venir le site</a> </button>
+            </div>
 
-<button type="button" class="btn btn-light"> <a href = "{{path('categories_ajout')}}"> Ajoutez nouvelle catégorie</a> </button>
-
-<h5> Ajoutez une nouvelle recette </h5> 
-
-<button type="button" class="btn btn-light"> <a href = "{{path('recettes_ajout')}}"> Ajoutez nouvelle recette</a> </button>
+           
+        </section>
+    </div>
 
 {% endblock %}

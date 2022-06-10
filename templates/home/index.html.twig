@@ -10,46 +10,151 @@
 
 	<div class="container">
 
-		<header>
+		 {% include './partials/header.html.twig' %}
 
-			<div class = "nav-haut">
+		<section  class = "produits-section">
 
-				<div class="logo">
-					<img src="{{ asset('images/logo/Logo-ThuyTien2.jpg') }}" alt="">
+			<h1> Découvriez nos produits exotiques </h1>
+
+			<div class = "produits">
+
+				<div class = "produits-asiatiques show">
+
+					<h4>Nos produits asiatiques</h4>
+
+					<img src="{{asset('images/produit/show/asi.jpg')}}" alt="">
+
+					<p >
+						Nous mettons à votre disposition un catalogue en ligne pour
+						vous donner un aperçu de ce que nous vous proposons, et vous permettre de 
+						trouver tous les produits vous avez dont besoins.
+					</p>
+
+					<a href="{{ path("app_products_asiatiques") }}"><button type="button" class="btn btn-danger">Savoir plus</button></a>
+
 				</div>
 
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					
-					<ul class="navbar-nav">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Produits asiatiques <span class="sr-only"></a>
-						</li>
-						<li class="nav-item active">
-							<a class="nav-link" href="#">Produits africains <span class="sr-only"></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Produits vaisselles</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Notre gamme Bio</a>
-						</li>
-							
-					</ul>
+				<div class = "produits-africans show">
 
-				</nav>
+					<h4>Nos produits africans</h4>
 
-				<i class="fa-solid fa-user"></i>
+					<img src="{{asset('images/produit/show/afri.jpg')}}" alt="">
+
+					<p>
+						Nous mettons à votre disposition un catalogue en ligne pour
+						vous donner un aperçu de ce que nous vous proposons, et vous permettre de 
+						trouver tous les produits vous avez dont besoins.
+
+					</p>
+
+					<a href="{{ path("app_products_africains") }}"><button type="button" class="btn btn-warning">Savoir plus</button></a>
+
+				</div>
+
+				<div class = "produits-vaiselles show">
+
+					<h4>Nos produits vaisselles</h4>
+
+					<img src="{{asset('images/produit/show/vaisselle2.jpg')}}" alt="">
+					<p class="text-justify">
+						Nous mettons à votre disposition un catalogue en ligne pour
+						vous donner un aperçu de ce que nous vous proposons, et vous permettre de 
+						trouver tous les produits vous avez dont besoins.
+					</p>
+
+					<a href="{{ path("app_products_vaiselles") }}"><button type="button" class="btn btn-secondary vaisselle">Savoir plus</button> </a> 
+
+				</div>
+
+				<div class = "produits-bio show">
+
+					<h4>Notre gamme Bio</h4>
+
+					<img src="{{asset('images/produit/show/bio.png')}}" alt="">
+
+					<p>
+						Nous mettons à votre disposition un catalogue en ligne pour
+						vous donner un aperçu de ce que nous vous proposons, et vous permettre de 
+						trouver tous les produits vous avez dont besoins.
+
+					</p>
+
+					<a href="{{ path("app_products_bio") }}"><button type="button" class="btn btn-secondary">Savoir plus</button></a>
+
+				</div>
 
 			</div>
 
-			<div class = "background-haut">
+		</section >
+
+			<h1 class ="meilleur-home"> Découvriez nos meilleurs vents </h1>
+		<section class = "section-meilleur-vents">
+
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/show/bio.png')}}" alt="">
+				<p> Produit japonais</p>
+			</div>
+
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/produit-asi/slides1/7.jpg')}}" alt="">
+				<p> Produit Bio</p>
 
 			</div>
-			
 
-		</header>
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/show/afri.jpg')}}" alt="">
+				<p> Produit japonais</p>
 
+			</div>
+
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/show/vaisselle3.jpg')}}" alt="">
+				<p> Produit japonais</p>
+			</div>
+
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/show/nouille.jpg')}}" alt="">
+				<p> Produit africain</p>
+
+			</div>
+
+			<div class = "meilleur-vents-img">
+				<img class = "image" src="{{asset('images/produit/show/vaisselle2.jpg')}}" alt="">
+				<p> Produit japonais</p>
+
+			</div>
+
+		</section>
+
+		<button type="button" class="btn btn-danger dange">Voir l'autres produits</button>
+
+			<h5 class="titre-histoire"> Notre histoire </h5>
+
+		<section  class = "section-meilleur-histoire">
+
+			<div class = "text">
+				<p>
+					 On avait commencer comme un petit magasin pour vendre des produits asiatiques.
+					 L’anées après années, on agrandit notre magasin et il devient un magasin exotiques, 
+					où vous pouvez trouver tous non seulement des produits asiatiques, mais aussi des produits exotiques d’autres continants. 
+				</p>
+
+				<button type="button" class="btn btn-danger but">Click pour lire la suite</button>
+
+			</div>
+
+			<div class = "image-histoire">
+
+				<img src="{{ asset('images/logo/histoire.png') }}" alt="">
+
+			</div>
+		</section>
+
+		{% include './partials/footer.html.twig' %}
+	
 	</div>
+
+	{% include './partials/js.html.twig' %}
 
 {% endblock %}
 

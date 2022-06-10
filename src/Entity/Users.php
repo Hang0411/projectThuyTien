@@ -49,6 +49,16 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $recettes;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $lastname;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $firstname;
+
     public function __construct()
     {
         $this->recettes = new ArrayCollection();
@@ -186,6 +196,30 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
                 $recette->setUsers(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getLastname(): ?string
+    {
+        return $this->lastname;
+    }
+
+    public function setLastname(string $lastname): self
+    {
+        $this->lastname = $lastname;
+
+        return $this;
+    }
+
+    public function getFirstname(): ?string
+    {
+        return $this->firstname;
+    }
+
+    public function setFirstname(string $firstname): self
+    {
+        $this->firstname = $firstname;
 
         return $this;
     }

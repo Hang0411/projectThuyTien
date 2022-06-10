@@ -3,6 +3,7 @@
 namespace App\Controller;
 use App\Entity\Categories;
 use App\Form\CategoriesType;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -11,12 +12,16 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategoriesController extends AbstractController
 {
     /**
-     * @Route("/categories", name="app_categories")
+     * @Route("/categories", name="show_categories_all")
      */
-    public function index(): Response
+    public function index(EntityManagerInterface $entityManager): Response
     {
+        $categories = $entityManager
+            ->getRepository(Categories::class)
+            ->findAll();
+
         return $this->render('categories/index.html.twig', [
-            'controller_name' => 'CategoriesController',
+            'categories' => $categories,
         ]);
     }
 
@@ -48,12 +53,47 @@ class CategoriesController extends AbstractController
     }
 
     /**
-     * @Route("/categories/id/{id}", name="app_categories_show", methods={"GET"})
+     * @Route("/categories/id/{id}", name="show_categorie_one")
      */
-    public function show(Categories $categorie): Response
+    public function readOne(Categories $categorie): Response
     {
-        return $this->render('articles/show.html.twig', [
+        return $this->render('categories/readOne.html.twig', [
             'categorie' => $categorie,
         ]);
     }
+
+    
+    /**
+     * @Route("/id/{id}/edit", name="categorie_edit", methods={"GET", "POST"})
+     */
+    public function edit(Request $request, Categories $categorie, EntityManagerInterface $entityManager): Response
+    {
+        $form = $this->createForm(CategoriesType::class, $categorie);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $entityManager->flush();
+
+            return $this->redirectToRoute('show_categories_all', [], Response::HTTP_SEE_OTHER);
+        }
+
+        return $this->renderForm('categories/edit.html.twig', [
+            'categorie' => $categorie,
+            'form' => $form,
+        ]);
+    }
+
+    /**
+     * @Route("/{id}", name="categorie_delete", methods={"POST"})
+     */
+    public function delete(Request $request, Categories $categorie, EntityManagerInterface $entityManager): Response
+    {
+        if ($this->isCsrfTokenValid('delete'.$categorie->getId(), $request->request->get('_token'))) {
+            $entityManager->remove($categorie);
+            $entityManager->flush();
+        }
+
+        return $this->redirectToRoute('show_categories_all', [], Response::HTTP_SEE_OTHER);
+    }
 }
+

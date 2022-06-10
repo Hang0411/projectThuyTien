@@ -1,13 +1,404 @@
-header{
-    width: 100% vw;
+
+@font-face{
+    font-family: "arial-rounded-mt-bold";
+    src: url('/assets/font/arial-rounded-mt-bold/arial-rounded-mt-bold.png');
+}
+@font-face{
+    font-family: "glacial-indifference";
+    src: url('/assets/font/glacial-indifference/GlacialIndifference-Regular.otf');
+}
+
+.container{
+    width: 1200px;
     height: max-content;
-    background-color: #F41D1D;
+    margin: auto;
+}
+
+header{
+    width: 1200px;
+    height: max-content;
+    background-color: #FF1616;
 }
 .nav-haut{
+    width: 1200px;
+    height: 80px;
     display: flex;
+    background-color: #F41D1D;
    
 }
 header .nav-haut .logo img{
-    width: 100px;
+    width: 150px;
     height: max-content;
+    margin-left: 20px;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+ul{
+   font-family: "arial-rounded-mt-bold";
+    flex-direction: row;
+    font-size: 22px;  
+}
+
+ul a:hover{
+    color: #FFBD59;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    font-weight: bold;   
+}
+
+ul a{
+    color: whitesmoke;
+}
+
+#user{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+     
+}
+
+.utilisateur{
+    font-size: 30px;
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.background-haut{
+    width: 1200px;
+    height: 400px;
+}
+
+.background-haut .slide{
+    width: 100%;
+    height: 450px;
+
+}
+
+.produits-section{
+    width: 1200px;
+    height:max-content;
+    margin-top: 100px;
+}
+
+ h1{
+    font-family: "arial-rounded-mt-bold";
+    font-size: 30px;
+    color:  #FF1616;
+    font-weight: bold;
+    text-align: center;
+}
+
+.produits{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+}
+
+.show{
+    max-width: 260px;
+    height: 470px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    border: 2px solid  rgb(173, 169, 169);
+    border-radius: 5px;
+    transition-property:calc(1);
+    transition-duration: 1000ms; 
+    
+}
+
+.show:hover{
+    transform: scale(1.1);
+
+}
+.show h4{
+    color: rgb(82, 79, 79);
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 10px;   
+}
+.show img{
+    width: 200px;
+    height: 150px;
+}
+.show p{
+    font-family: "glacial-indifference";
+    font-size: 20px;
+    width: 250px;
+    height: max-content;
+    color: rgb(82, 79, 79);
+    font-size: 16px;
+    margin-top: 20px;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+}
+
+.vaisselle{
+    background-color: #358D82;
+}
+
+.section-meilleur-vents{
+    width: 1200px;
+    height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h2{
+    font-family: "glacial-indifference";
+    font-size: 30px;
+    color:  #358D82;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    justify-items: center;
+
+}
+
+.meilleur-vents-img{
+    width: 350px;
+    height: 320px;
+    margin-top: 50px;
+    border-radius: 7px;
+    background-color: #f4f0f0;
+    margin:5px;
+    transition-property:calc(1);
+    transition-duration: 1000ms; 
+    padding: 20px;
+}
+
+.meilleur-vents-img:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.image{
+    width: 300px;
+    height: 250px;
+    border-radius: 5px;
+
+}
+
+.meilleur-vents-img p{
+    font-family: "glacial-indifference";
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dange{
+    justify-content: center;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+
+.section-meilleur-histoire{
+    width: 1200px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+.meilleur-home{
+    font-family: "glacial-indifference";
+    font-size: 30px;
+    color:  #FFBD59;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.text {
+    width: 450px;
+    height: 320px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+.text p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+   
+}
+
+.but{
+    margin-left: 100px;
+    background-color:  #FFBD59;
+    margin-top: 20px;
+
+}
+.titre-histoire{
+    font-family: "glacial-indifference";
+    font-size: 35px;
+    color:  #FF1616;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-histoire{
+    width: 600px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.image-histoire img{
+    width: 500px;
+    height: 300px;
+}
+
+footer{
+    font-family: "glacial-indifference";
+    width: 1200px;
+    height: 300px;
+    background-color:  #FF1616;
+    border-radius: 5px;
+   
+}
+ #nav-bas{
+    width: 1200px;
+    height: 80px;
+    margin-top: 0;
+ }
+
+ .foot-nav{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    text-align: center;
+    
+ }
+
+#foot-bas{
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    animation: Slide_Up 2.8s ease; 
+}
+
+.group{
+    width: 350px;
+    height: 200px;
+    margin: auto;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+h4{
+    font-weight: bold;
+    color: #FFBD59;
+    font-size: 25px;
+    text-align: center;
+}
+
+.boutique{
+    color: whitesmoke;
+    font-size: 16px;
+}
+
+.address{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+footer ul{
+    color: whitesmoke;
+    padding: 25px;  
+}
+
+.facebook{
+    color: whitesmoke;
+    font-size: 45px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 20px;
+}
+
+.twitter, .youtube{
+    color: whitesmoke;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-top: 20px;
+
+}
+
+.recherche{
+    width: 350px;
+    height: 100px;
+    margin-top: 70px;
+}
+
+.barre{
+    width: 200px;
+    height: 50px;
+}
+.search{
+    width: 85px;
+    height: 50px;
+    background-color: #FFBD59;
+}
+
+.search:hover{
+    background-color:  #FF1616;
+}
+
+.thuytien{
+    width: 1200px;
+    height: 20px;
+    font-size: 16px;
+    color: whitesmoke;
+    margin-left: 20px;
+    margin-top: 20px;
+   
+}
+
+
+@keyframes Slide_Up{
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px){
+
+    
+    .produits{
+        max-width: 100%;
+        display: block;
+        flex-direction: column;
+    }
+    .show{   
+        max-width: 100%;
+        height: max-content;
+    }
+    .show p{   
+     
+        margin: auto;
+    }
+
+
+
+
 }
